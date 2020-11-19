@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- grid 사용해보기 /퍼센트로 작업 -->
+<html>
+<head>
+<style>
+  html,body{margin:0; padding:0; height:100%;}
+  .header{width:100%; height:15%;background :rgba(255, 99, 71, 1); color: white; text-align:center; }
+   /* padding: 20px; */
+  .nav{width:15%; height:80%; float:left; background : rgba(255, 99, 71, 0.6)}
+  /* .article{width:25%; height:70%; float:left;
+      background: pink;} */
+  .section{width:85%; height:80%; float:left;
+            background : rgba(255, 99, 71, 0.2)}
+
+  .aside{width:15%; height:70%; float:left;
+            background :orange;      }
+  .footer{width:100%; height:5%; clear:both; float:right;
+            background :brown;      }
+* { margin:0; }
+ul, li { list-style:none; }
+a { color:#fff; text-decoration:underline; }
+a:hover { color:#000; text-decoration:none; }
+#wrap{width:980px; height:auto; float:left;}
+#main_menu{width:20%; height:100%; float:left; background:none; border:none;}
+.gnb{padding:0}
+.gnb a {width:135px; padding:0 5px 0 5px; display:block; text-decoration:none;
+}
+.gnb li { position:relative; float:left; margin-right:11px; }
+.gnb li a { height:100px; text-align:center; line-height:50px; font-size:1.3em;  color:ghostwhite; }
+.gnb  li  a:hover { color:white; }
+.gnb  li  ul { display:none; position:absolute; top:50px; left:0;}
+.gnb  li:hover ul { display:block; }
+.gnb li ul a {width:120px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+.gnb li ul a:hover { background-color:#555; }
+div{border:none;}
+      #main{margin-left:0%; border:none; position: relative; left:0%; width:100%; height:80%;}
+      #a{margin-left:3%; margin-right:47%; width:43%; height:50%; text-align:left;
+         position:absolute; left:3%; top:5%; }
+      #b{margin-left:47%; margin-right:3%; width:43%; height:50%; text-align:left;
+         position:absolute; left:3%; top:5%; }
+      #c{margin-left:3%; margin-right:47%; margin-top: 20%; width:43%; height:50%; text-align:left;
+         position:absolute; left:3%; top:5%; }
+      #d{margin-left:47%; margin-right:3%; margin-top: 20%; width:43%; height:50%; text-align:left;
+         position:absolute; left:3%; top:5%; }
+
+</style>
+</head>
+<body>
+<header class="header">
+    <h1>모두를 위한 정보통신 사이트 </h1>
+</header>
+  <nav class="nav">
+  <h1>MENU</h1>
+  <div id="wrap">
+     <div id="main_menu">
+       <ul class="gnb">
+         <li><a href="/index.php/1" title="동아리소개">유아관</a></li>
+         <li><a href="/index.php/2" title="사진기술">청소년관</a>
+           <ul>
+             <li><a href="/index.php/2" title="촬영기술">헷</a></li>
+             <li><a href="/index.php/3" title="편집기술">힛</a></li>
+           </ul>
+         </li>
+         <li><a href="/board/sub.php/list " title="성인관">성인관</a><ul>
+           <li><a href="/board/sub.php/list " title="자유게시판">자유게시판</a></li></ul>
+         </li>
+         <li><a href="/member/sub.php/login" title="노인관">노인관</a>
+           <ul>
+              <li><a href="/member/sub.php/login" title="로그인">로그인</a></li>
+              <li><a href="/member/sub.php/join" title="회원가입">회원가입</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <p>웹페이지의 메뉴가 나타나는 영역입니다.</p>
+</nav>
+<!-- <article class="article">
+  <h1>article 영역</h1>
+  <p>문서 내의 독립적인 글을 작성하는 영역으로 문서와 연관이 있는 독립적인 글들이다</p>
+</article> -->
+<section class="section">
+  <h1>section영역 </h1>
+<div id="main">
+  <div id="a">
+   <fieldset>
+     <legend><h3>공지사항</h3></legend>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+   </fieldset>
+  </div>
+  <div id="b">
+   <fieldset>
+     <legend><h3><h3>다가오는 프로그래밍 행사</h3></h3></legend>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+   </fieldset>
+  </div>
+  <div id="c">
+   <fieldset>
+     <legend><h3><h3>Q & A </h3></h3></legend>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+   </fieldset>
+  </div>
+  <div id="d">
+   <fieldset>
+     <legend><h3><h3>오늘의 영상</h3></h3></legend>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+     * @@@@@@@@@@ <br>
+     * ^^^^^^^^^^ <br>
+   </fieldset>
+  </div>
+</div>
+</section>
+
+<footer class="footer">
+  <p>footer영역 - 문서의 정보를 적는 곳</p>
+</footer>
+</body>
+</html>
